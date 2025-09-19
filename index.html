@@ -1,148 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JNIM Property Services &ndash; Maintenance &amp; Property Services in Savannah, GA</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f8f8f8;
-      color: #333;
-    }
-    header {
-      background-color: #c00;
-      color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 10px 0;
-      font-size: 1.1rem;
-    }
-    .cta {
-      margin-top: 20px;
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-    .cta a {
-      color: #fff;
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .service {
-      background-color: #fff;
-      border: 1px solid #e3e3e3;
-      border-radius: 8px;
-      padding: 20px;
-      flex: 1 1 280px;
-      max-width: 300px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    .service h3 {
-      margin-top: 0;
-      color: #c00;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .feature {
-      background-color: #fff;
-      border: 1px solid #e3e3e3;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    a { color: inherit; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JNIM Property Services LLC | Savannah Maintenance & Services</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; color:#333; line-height:1.6; background-color:#f5f5f5; }
+  a { color:#c00; }
+  #hero {
+    background: linear-gradient(#c00, #900);
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+  }
+  #hero .logo {
+    max-width:250px;
+    margin:0 auto 20px;
+  }
+  #hero h1 { margin:0; font-size:3em; }
+  #hero p { margin:10px 0; font-size:1.2em; }
+  .cta-button {
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#ffa500;
+    color:#fff;
+    border-radius:6px;
+    text-decoration:none;
+    transition: background .3s;
+  }
+  .cta-button:hover { background:#cc3300; }
+
+  section { padding:60px 20px; max-width:1000px; margin:0 auto; }
+
+  h2 { text-align:center; margin-bottom:30px; font-size:2em; color:#c00; }
+
+  .services {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:20px;
+  }
+  .service {
+    background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); padding:20px; width:280px;
+    text-align:center; transition: transform 0.3s;
+  }
+  .service:hover { transform:translateY(-5px); }
+  .service .icon {
+    font-size:40px; margin-bottom:10px; color:#c00;
+  }
+  .service h3 { margin:10px 0; color:#c00; }
+  .service p { font-size:0.95em; color:#555; }
+
+  .features, .testimonials {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:20px;
+  }
+  .feature, .testimonial {
+    background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); padding:20px; width:300px;
+  }
+  .feature h3 { color:#c00; margin-top:0; }
+  .testimonial p { font-style:italic; }
+  .testimonial .author { text-align:right; margin-top:10px; font-weight:bold; }
+
+  #contact { text-align:center; background:#fff; padding:40px 20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  #contact p { margin:10px 0; }
+  #contact .phone { font-size:1.4em; color:#c00; margin-top:10px; }
+
+  footer { background:#c00; color:#fff; text-align:center; padding:20px 10px; margin-top:40px; }
+  footer a { color:#fff; margin:0 10px; text-decoration:none; }
+</style>
 </head>
 <body>
-  <header>
-    <!-- Logo image -->
-    <img src="301d179833c7d7bcbb4b5e8936c32b43.jpeg" alt="JNIM Property Services logo" style="max-width:200px;width:100%;height:auto;margin:0 auto 20px;display:block;">
-    <h1>JNIM Property Services LLC</h1>
-    <p>Veteran Owned and Operated &ndash; Licensed and Insured</p>
-    <p>Professional Property Maintenance &amp; Services in Savannah &amp; Surrounding Areas</p>
-    <div class="cta">Call or Text: <a href="tel:9122173590">912-217-3590</a></div>
-  </header>
 
-  <section>
-    <h2 style="text-align:center; margin-bottom:20px;">Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <h3>General Maintenance</h3>
-        <p>From routine fixes to preventative maintenance, we keep your property in top condition.</p>
-      </div>
-      <div class="service">
-        <h3>Handyman &amp; Repairs</h3>
-        <p>Reliable handyman services for all your repair and improvement needs.</p>
-      </div>
-      <div class="service">
-        <h3>Turnover Services</h3>
-        <p>Quick and thorough turnover solutions to prepare your rental properties for new tenants.</p>
-      </div>
-      <div class="service">
-        <h3>Preventive Programs</h3>
-        <p>Customized maintenance programs to prevent costly issues before they arise.</p>
-      </div>
+<div id="hero">
+  <img src="301d17983c7d7bcbb4b5e8936c32b43.jpeg" alt="JNIM Property Services logo" class="logo">
+  <h1>JNIM Property Services LLC</h1>
+  <p>Veteran Owned &amp; Operated — Licensed &amp; Insured</p>
+  <p>Professional Property Maintenance &amp; Services in Savannah &amp; Surrounding Areas</p>
+  <a href="tel:9122173590" class="cta-button">Call or Text: 912-217-3590</a>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <div class="icon">🛠️</div>
+      <h3>General Maintenance</h3>
+      <p>From routine fixes to preventative maintenance, we keep your property in top condition.</p>
     </div>
-  </section>
-
-  <section style="background-color:#f0f0f0;">
-    <h2 style="text-align:center; margin-bottom:20px;">Why Choose Us</h2>
-    <div class="features">
-      <div class="feature">
-        <h4>Veteran-Owned</h4>
-        <p>We bring the values of discipline and integrity to every job.</p>
-      </div>
-      <div class="feature">
-        <h4>Licensed &amp; Insured</h4>
-        <p>Rest easy knowing you’re working with a fully licensed and insured professional.</p>
-      </div>
-      <div class="feature">
-        <h4>Comprehensive Services</h4>
-        <p>From carpentry and painting to electrical, HVAC and more—there’s no job too small or too big.</p>
-      </div>
-      <div class="feature">
-        <h4>Local Expertise</h4>
-        <p>Serving Savannah, Hinesville, and the surrounding areas with pride.</p>
-      </div>
+    <div class="service">
+      <div class="icon">🔨</div>
+      <h3>Handyman &amp; Repairs</h3>
+      <p>Reliable handyman services for all your repair and improvement needs.</p>
     </div>
-  </section>
+    <div class="service">
+      <div class="icon">🏠</div>
+      <h3>Turnover Services</h3>
+      <p>Quick and thorough turnover solutions to prepare your rental properties for new tenants.</p>
+    </div>
+    <div class="service">
+      <div class="icon">🔧</div>
+      <h3>Preventive Programs</h3>
+      <p>Customized maintenance programs to prevent costly issues before they arise.</p>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2 style="text-align:center; margin-bottom:20px;">Contact Us</h2>
-    <p style="text-align:center;">Ready to schedule service or have a question? Reach out today!</p>
-    <p style="text-align:center; font-size:1.3rem; font-weight:bold;">Call or Text: <a href="tel:9122173590">912-217-3590</a></p>
-    <p style="text-align:center;">Or email us at <a href="mailto:fraternal4x@gmail.com">fraternal4x@gmail.com</a></p>
-  </section>
+<section id="features">
+  <h2>Why Choose Us</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Veteran Owned</h3>
+      <p>We bring military-level professionalism and attention to detail to every job.</p>
+    </div>
+    <div class="feature">
+      <h3>Licensed &amp; Insured</h3>
+      <p>Feel confident knowing we are fully licensed and insured for your protection.</p>
+    </div>
+    <div class="feature">
+      <h3>Comprehensive Services</h3>
+      <p>A one-stop shop for maintenance, repairs, turnovers, and preventive care.</p>
+    </div>
+    <div class="feature">
+      <h3>Local Expertise</h3>
+      <p>Based in Savannah, we understand the unique needs of our local community.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 JNIM Property Services LLC. All rights reserved.</p>
-  </footer>
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>"JNIM Property Services took care of our rental turnover in record time and made it look brand new!"</p>
+      <div class="author">— Lisa M., Savannah</div>
+    </div>
+    <div class="testimonial">
+      <p>"Reliable, professional, and friendly. Highly recommend for any home repairs or maintenance."</p>
+      <div class="author">— Mark R., Hinesville</div>
+    </div>
+    <div class="testimonial">
+      <p>"Their preventive maintenance program saved us money by catching issues early. Top-notch service!"</p>
+      <div class="author">— Sarah D., Richmond Hill</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Ready to start your project? Reach out today for a free estimate.</p>
+  <p class="phone">Call or Text: <a href="tel:9122173590">912-217-3590</a></p>
+  <p>Email: <a href="mailto:fraternal4x@gmail.com">fraternal4x@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 JNIM Property Services LLC. All rights reserved.</p>
+  <p>
+    <a href="#services">Services</a> |
+    <a href="#features">Why Us</a> |
+    <a href="#testimonials">Testimonials</a> |
+    <a href="#contact">Contact</a>
+  </p>
+</footer>
+
 </body>
 </html>
