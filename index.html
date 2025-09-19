@@ -8,10 +8,13 @@
   body { font-family: Arial, sans-serif; margin:0; color:#333; line-height:1.6; background-color:#f5f5f5; }
   a { color:#c00; }
   #hero {
-    background: linear-gradient(#c00, #900);
+    /* Overlay a rich red gradient on top of a photo of a modern home for a premium feel */
+    background: linear-gradient(rgba(204, 0, 0, 0.85), rgba(153, 0, 0, 0.85)), url('hero.jpg');
+    background-size: cover;
+    background-position: center;
     color:#fff;
     text-align:center;
-    padding:60px 20px;
+    padding:80px 20px;
   }
   #hero .logo {
     max-width:250px;
@@ -103,6 +106,12 @@
   </div>
 </section>
 
+<!-- Service Area section -->
+<section id="service-area">
+  <h2>Service Areas</h2>
+  <p style="max-width:800px;margin:0 auto;text-align:center;">We proudly serve Savannah, Hinesville, Richmond Hill, and the surrounding Georgia Lowcountry. If your home or rental property is within these areas, we’re ready to help!</p>
+</section>
+
 <section id="features">
   <h2>Why Choose Us</h2>
   <div class="features">
@@ -155,6 +164,7 @@
   <p>
     <a href="#services">Services</a> |
     <a href="#features">Why Us</a> |
+    <a href="#service-area">Service Area</a> |
     <a href="#testimonials">Testimonials</a> |
     <a href="#contact">Contact</a>
   </p>
